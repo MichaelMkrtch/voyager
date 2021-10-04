@@ -85,11 +85,38 @@ nav a:hover::before {
     width: 100%;
 }
 
+
+@media only screen and (max-width: 700px) {
+    body {
+        font-size: 12px;
+    }
+    
+    .container {
+        width: 95%;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav li {
+        margin: 0 auto;
+        padding-left: 0.83rem;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+}
+
 /* Banner */
 .banner-container {
     width: 100%;
     height: 100%;
     position: relative;
+    text-align: center;
 }
 .banner-container img {
     background-position: center;
@@ -101,8 +128,8 @@ nav a:hover::before {
 .banner-container h1 {
     color: #EEEEEE;
     position: absolute;
+    top: 50%;
     left: 50%;
-    bottom: 45%;
     transform: translate(-50%, -50%);
     font-size: 3.5rem;
     text-align: center;
@@ -181,6 +208,14 @@ nav a:hover::before {
     }
 }
 
+@media only screen and (max-width: 700px) {
+    .banner-container h1 {
+        font-size: 2rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
 /* About Us */
 #about {
     background-color: #00ADB5;
@@ -197,7 +232,7 @@ nav a:hover::before {
 }
 
 #about p {
-    width: 65%;
+    width: 45%;
     color: #EEEEEE;
     text-align: center;
     margin: 0 auto;
@@ -205,15 +240,21 @@ nav a:hover::before {
     line-height: 2.5rem;
 }
 
+@media only screen and (max-width: 700px) {
+    #about p {
+        width: 80%;
+    }
+}
+
 /* Footer */
 .footer p {
     color: #EEEEEE;
-    padding-left: 1rem;
+    padding: 1rem;
+    text-align: center;
 }
 
-.footer span a {
-    color: #EEEEEE;
-    padding-right: 1rem;
-    float: right;
-    text-decoration: none;
+@media only screen and (max-width: 700px) {
+    .footer p {
+        font-size: 0.85rem;
+    }
 }
